@@ -1,0 +1,48 @@
+Functions
+return type is output of function
+the parameter passed is input of function
+function could return only one value and can take mutiple values as input 
+void display() could be defined for 0 parameters
+two func can have same variables and whenever function is declared then a new activation
+record is created in the stack
+functional overloading 
+it can have many parameters passed to the same function
+functional template
+using template class T we could substitue any datatype of the function and return type of 
+function
+even for object of class
+function prototype 
+Template<class T>
+T max(T a,T b)
+{
+}
+
+using default arguments we can declare functions avoiding overloading of functions
+int func(int a=0,int b=0,int c=0);
+it would work for null ,one and many arguments
+
+
+Parameter Passing Values
+Call by value method - in the main function the actual values are passed to function to the formal parameters
+the actual values arent changed and remains same even after execution of the function
+Used when only value of the function to be returned
+call by address method-here the formal parameters are pointers and the address of the actual variables are passed
+func(&x,&y)
+func(int *a,int *b)
+* a will have the value of x and *b will have the value of y
+Through pointers we can access the variables of one function using the other
+call by refernce- here in the main function the function declared and during the function call 
+there would be no separate machine code generated and the function code would be generated under main function
+itself. Here the formal parameters are passed as address &a ,&b making the address of x and y same as a and b
+hence a =x and b=y here
+the fuctions declared are called as inline functions
+
+
+return by address
+here using the pointer we could return the address of declared in the heap
+local variable needs to be declared as pointer 
+heap memory is global then using new keyword we could declare the pointer in heap 
+formal parameters is * p = new int[]
+actual parameters is * q = func()
+ 
+

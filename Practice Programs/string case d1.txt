@@ -1,0 +1,33 @@
+import java.util.*;
+import java.lang.*;
+class str
+{
+    public static void main(String args[])
+    {
+       Scanner sc = new Scanner(System.in);
+       StringBuilder k = new StringBuilder(sc.nextLine());
+       String y = new String(k);
+       for(int i=0;i<y.length();i++)
+       {
+           char x = y.charAt(i);
+           if(Character.isLowerCase(x))
+           {
+             char z = Character.toUpperCase(x);
+             k.setCharAt(i,z);
+             
+           }
+           else
+           {
+             char z = Character.toLowerCase(x);
+             k.setCharAt(i,z);
+              
+           }
+       }   
+         
+          System.out.println(k);
+       
+       
+       
+        
+    }
+}

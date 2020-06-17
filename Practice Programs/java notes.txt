@@ -1,0 +1,7 @@
+in interfaces only declaration is possible
+no constructor can be defined on interface hence a object cant be created on interface
+
+for programming purpose
+1. LCM of two numbers can be done by finding out the gcd of two numbers and dividing by the product of
+two numbers
+LCM(a,b)=a*b/gcd(a,b)
